@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alfredo</title>
+        <link rel="stylesheet" type="text/css" href='responsivo.css' >
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="body">
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="menus">
+                <div id="menu-dev" class="menu-dev">
+                    <a href="#" id="button-dev1">About</a>
+                    <a href="#github" id="button-dev2">Github</a>
+                    <a href="#interests" id="button-dev3">Interests</a>
+                    <a href="#contact" id="button-dev4">Contact</a>
+                </div>
+                <div id="menu-arte" class="menu-arte">
+                    <a href="#" id="button-arte1">About</a>
+                    <a href="#insta" id="button-arte2">Instagram</a>
+                    <!-- <a href="#skecthes" id="button-arte3">Sketches</a>
+                    <a href="#stickers" id="button-arte4">Stickers</a> -->
+                </div>
+            </div>
+        </div>
+          
+          
+        <div class="header">
+
+            <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+            
+            <div class="selector">
+                <span style="cursor:pointer" onclick="openDev()">Dev</span>
+                <span style="cursor:pointer" onclick="openArte()">Art</span>
+            </div>
+
+        </div>
+
+        <div class="corpo" width="100%">
+            <div class="dev" id="dev">
+                <div class="about-dev" id="about-dev">
+                    <!-- <img src="dev.jpg" alt="João Alfredo" id="img-dev" class="img-dev"> -->
+
+                    <div class="dev-desc" id="dev-desc">
+                        <h1>About</h1>
+                        <p id="dev-p">
+                            Hello! My name is João Alfredo and I'm a Computer Science student currently based in São Paulo, Brazil (my hometown). I study at Insper Instituto de Pesquisa e Ensino, being a part of their first ever Computer Science class. Even thought I'm only set to graduate by 2025, I've already worked for companies such as PagSeguro and BotCity, as well as made projects with some classmates that both show our interests in technology as well as our commitment to further our education.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="https://github.com/alfredjynx" id="github" class="github">Github</a>
+                
+                <div class="interests" id="interests">
+                    <a href="https://github.com/alfredjynx/APS-_Ciencia-de-Dados-Insper" id="int-1">Data Science</a>
+                    <a href="https://github.com/InsperDynamics/AWS-DeepRacer" id="int-2">Deep Learning</a>
+                    <!-- <a href="" id="int-3">A.I.</a> -->
+                    <a href="https://github.com/alfredjynx/site-ferias-version" id="int-3">Web Development</a>
+                </div>
+
+                <div class="contact">
+                    <a href="" class="linkedin"> Linkedin</a>
+                    <a href="" class="email"> Email</a>
+                </div>
+
+                <div class="bottom">
+                    <h4>© 1996-2022 Direitos reservados?</h4>
+                </div>
+            </div>
+
+            <div class="arte" id="arte">
+                <div class="about-art" id="about-art">
+                    <div class="art-desc" id="art-desc">
+                        <h1 id="art-h1">About</h1>
+                        <p id="art-p">
+                            Hello! My name is João Alfredo and I'm also an artist based in São Paulo, Brazil. This is a hobby I've had for a long time, but my commitment really started during the pandemic. Covid hit hard, but drawing really helped me get trough it. Through the process I've been able to develop my own style, as well as learn different mediums and techniques, showing my progress by means of Instagram posts and stickers that I put up all over the city.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="https://www.instagram.com/alfreeeeeeeeedo/" id="insta" class="insta">Instagram</a>
+                
+                <div class="bottom-art" id="bottom">
+                    <h4  id="bottom-arte">© 2003-2022 Todos os direitos reservados.</h4>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "12rem";
+            }
+            
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+            
+            function openArte() {
+            document.getElementById("dev").style.width = "0";
+
+            document.getElementById("button-dev1").style.padding = "0";
+            document.getElementById("button-dev2").style.padding = "0";
+            document.getElementById("button-dev3").style.padding = "0";
+            document.getElementById("button-dev4").style.padding = "0";
+            document.getElementById("button-dev1").style.fontSize = "0";
+            document.getElementById("button-dev2").style.fontSize = "0";
+            document.getElementById("button-dev3").style.fontSize = "0";
+            document.getElementById("button-dev4").style.fontSize = "0";
+
+            document.getElementById("dev-p").style.fontSize = "0";
+
+            document.getElementById("int-1").style.fontSize = "0";
+            document.getElementById("int-2").style.fontSize = "0";
+            document.getElementById("int-3").style.fontSize = "0";
+
+
+            document.getElementById("arte").style.width = "100%";
+
+            document.getElementById("art-h1").style.fontSize = "200%";
+            document.getElementById("art-p").style.fontSize = "100%";
+
+            // document.getElementById("insta").style.width = "100%";
+            // document.getElementById("insta").style.padding = "3rem 0rem 3rem 0rem";
+            document.getElementById("insta").style.fontSize = "350%";
+
+            document.getElementById("button-arte1").style.padding = "8px 8px 8px 32px";
+            document.getElementById("button-arte2").style.padding = "8px 8px 8px 32px";
+            // document.getElementById("button-arte3").style.padding = "8px 8px 8px 32px";
+            // document.getElementById("button-arte4").style.padding = "8px 8px 8px 32px";
+            document.getElementById("button-arte1").style.fontSize = "1rem";
+            document.getElementById("button-arte2").style.fontSize = "1rem";
+            // document.getElementById("button-arte3").style.fontSize = "1rem";
+            // document.getElementById("button-arte4").style.fontSize = "1rem";
+
+            document.getElementById("bottom-arte").style.fontSize = "70%";
+            }
+
+            function openDev() {
+            document.getElementById("dev").style.width = "100%";
+
+            document.getElementById("button-dev1").style.padding = "8px 8px 8px 32px";
+            document.getElementById("button-dev2").style.padding = "8px 8px 8px 32px";
+            document.getElementById("button-dev3").style.padding = "8px 8px 8px 32px";
+            document.getElementById("button-dev4").style.padding = "8px 8px 8px 32px";
+            document.getElementById("button-dev1").style.fontSize = "1rem";
+            document.getElementById("button-dev2").style.fontSize = "1rem";
+            document.getElementById("button-dev3").style.fontSize = "1rem";
+            document.getElementById("button-dev4").style.fontSize = "1rem";
+
+            document.getElementById("dev-p").style.fontSize = "100%";
+
+            document.getElementById("int-1").style.fontSize = "90%";
+            document.getElementById("int-2").style.fontSize = "90%";
+            document.getElementById("int-3").style.fontSize = "90%";
+
+
+            document.getElementById("arte").style.width = "0";
+            
+            document.getElementById("art-h1").style.fontSize = "0%";
+            document.getElementById("art-p").style.fontSize = "0%";
+
+            // document.getElementById("insta").style.width = "0";
+            // document.getElementById("insta").style.padding = "0";
+            document.getElementById("insta").style.fontSize = "0";
+
+            document.getElementById("button-arte1").style.padding = "0";
+            document.getElementById("button-arte2").style.padding = "0";
+            // document.getElementById("button-arte3").style.padding = "0";
+            // document.getElementById("button-arte4").style.padding = "0";
+            document.getElementById("button-arte1").style.fontSize = "0";
+            document.getElementById("button-arte2").style.fontSize = "0";
+            // document.getElementById("button-arte3").style.fontSize = "0";
+            // document.getElementById("button-arte4").style.fontSize = "0";   
+
+            document.getElementById("bottom-arte").style.fontSize = "0%";
+            }
+
+        </script>
+
+    </body>
+</html>

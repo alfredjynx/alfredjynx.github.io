@@ -289,7 +289,7 @@ a {
     width: 100%;
 }
 
-.contact a{
+.contact a, .contact span{
     width: 50%;
     color: rgb(247, 245, 245);
     padding: 0rem;

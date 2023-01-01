@@ -436,4 +436,20 @@ a {
         height: 30%;
         object-fit: cover;
     }
+
+    .bottom, .bottom-art{
+        color: #d6d6d6;
+        background-color: #363636;
+        width:100%;
+        transition: 0.5s;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .bottom-art h4 {
+        font-size: 0;
+    }
 }

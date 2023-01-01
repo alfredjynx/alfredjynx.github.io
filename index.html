@@ -66,8 +66,8 @@
                 </div>
 
                 <div class="contact">
-                    <a href="" class="linkedin"> Linkedin</a>
-                    <a href="" class="email"> Email</a>
+                    <a href="www.linkedin.com/in/joão-alfredo-cardoso-lamy-74423524a" class="linkedin"> Linkedin</a>
+                    <a style="cursor:pointer" value="joaoalfredocardosolamy@gmail.com" class="email" onclick="copyText()"> Email</a>
                 </div>
 
                 <div class="bottom">
@@ -94,6 +94,18 @@
         </div>
 
         <script>
+            function copyText() {
+            var copyText = document.getElementById("email").value;
+
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            navigator.clipboard.writeText(copyText.value);
+
+            alert("Copied the text: " + copyText.value);
+            }
+
+
             function openNav() {
             document.getElementById("mySidenav").style.width = "12rem";
             }
